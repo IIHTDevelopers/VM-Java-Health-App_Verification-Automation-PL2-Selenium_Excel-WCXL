@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="5" failed="16" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-30T18:34:34 IST" name="Suite" finished-at="2024-10-30T18:37:24 IST" duration-ms="169309">
+    <groups>
+      <group name="sanity">
+        <method signature="verification_testcase.verifyVerificationModule()[pri:1, instance:testcases.verification_testcase@263558c9]" name="verifyVerificationModule" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyVerificationSubModules()[pri:2, instance:testcases.verification_testcase@263558c9]" name="verifyVerificationSubModules" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyInventoryTabsAndButtonsAreDisplayed()[pri:3, instance:testcases.verification_testcase@263558c9]" name="verifyInventoryTabsAndButtonsAreDisplayed" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyNavigationToAnotherSubModuleAfterOpeningTheInventorySection()[pri:4, instance:testcases.verification_testcase@263558c9]" name="verifyNavigationToAnotherSubModuleAfterOpeningTheInventorySection" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyNavigationOfTabs()[pri:5, instance:testcases.verification_testcase@263558c9]" name="verifyNavigationOfTabs" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifySearchDataByDateFilter()[pri:6, instance:testcases.verification_testcase@263558c9]" name="verifySearchDataByDateFilter" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyToolTipText()[pri:7, instance:testcases.verification_testcase@263558c9]" name="verifyToolTipText" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyDatesAreRemeberedCorrectly()[pri:8, instance:testcases.verification_testcase@263558c9]" name="verifyDatesAreRemeberedCorrectly" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyResultDataIsAsPerTheSelectedDateRange()[pri:9, instance:testcases.verification_testcase@263558c9]" name="verifyResultDataIsAsPerTheSelectedDateRange" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyAllTheRadioButtonsAreSelectable()[pri:10, instance:testcases.verification_testcase@263558c9]" name="verifyAllTheRadioButtonsAreSelectable" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyRecordsAreFilterdAccordingToRequisitionStatus()[pri:11, instance:testcases.verification_testcase@263558c9]" name="verifyRecordsAreFilterdAccordingToRequisitionStatus" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyRequisitionPageForRecord()[pri:12, instance:testcases.verification_testcase@263558c9]" name="verifyRequisitionPageForRecord" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyRecordCountMatches()[pri:13, instance:testcases.verification_testcase@263558c9]" name="verifyRecordCountMatches" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyTheUserIsAbleScrollUpAndDown()[pri:14, instance:testcases.verification_testcase@263558c9]" name="verifyTheUserIsAbleScrollUpAndDown" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyRequiredFieldErrormessage()[pri:15, instance:testcases.verification_testcase@263558c9]" name="verifyRequiredFieldErrormessage" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.createAndverifyPurchaseRequest()[pri:16, instance:testcases.verification_testcase@263558c9]" name="createAndverifyPurchaseRequest" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.verifyPurchaseRequestInVerificationModule()[pri:17, instance:testcases.verification_testcase@263558c9]" name="verifyPurchaseRequestInVerificationModule" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.approveThePurchaseRequestAndVerifyStatus()[pri:18, instance:testcases.verification_testcase@263558c9]" name="approveThePurchaseRequestAndVerifyStatus" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.rejectAPurchaseRequestAndVerifyThePopUpMessage()[pri:19, instance:testcases.verification_testcase@263558c9]" name="rejectAPurchaseRequestAndVerifyThePopUpMessage" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.rehectThePurchaseRequestAndVerifyStatus()[pri:20, instance:testcases.verification_testcase@263558c9]" name="rehectThePurchaseRequestAndVerifyStatus" class="testcases.verification_testcase"/>
+        <method signature="verification_testcase.takingScreenshotOfCurrentPage()[pri:21, instance:testcases.verification_testcase@263558c9]" name="takingScreenshotOfCurrentPage" class="testcases.verification_testcase"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-10-30T18:34:34 IST" name="Test" finished-at="2024-10-30T18:37:24 IST" duration-ms="169309">
+      <class name="testcases.verification_testcase">
+        <test-method is-config="true" signature="initBrowser(java.lang.String,java.lang.String)[pri:0, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:34:34 IST" name="initBrowser" finished-at="2024-10-30T18:34:52 IST" duration-ms="17248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method signature="verifyVerificationModule()[pri:1, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:34:52 IST" name="verifyVerificationModule" description="Precondition: User should be logged in and on the healthapp section
+1. Login in the healthapp application
+2. Scroll down menu till verification
+3. Click on the verification" finished-at="2024-10-30T18:35:32 IST" duration-ms="40639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVerificationModule -->
+        <test-method signature="verifyVerificationSubModules()[pri:2, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:35:37 IST" name="verifyVerificationSubModules" description="Precondition: User should be logged in and on the Verification section\n&quot;
+	+ &quot;1. Click on the Verification Module drop-down arrow\n&quot;
+	+ &quot;2. Click on Order" finished-at="2024-10-30T18:35:40 IST" duration-ms="2544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVerificationSubModules -->
+        <test-method signature="verifyInventoryTabsAndButtonsAreDisplayed()[pri:3, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:35:43 IST" name="verifyInventoryTabsAndButtonsAreDisplayed" description="Precondition: User should be logged in and on the Verification section\n&quot;
+	+ &quot;1. Click on the Verification Module drop-down arrow\n&quot;
+	+ &quot;2. Click on Inventory	+ &quot;3. Click on Requisition" finished-at="2024-10-30T18:35:57 IST" duration-ms="14182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInventoryTabsAndButtonsAreDisplayed -->
+        <test-method signature="verifyNavigationToAnotherSubModuleAfterOpeningTheInventorySection()[pri:4, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:01 IST" name="verifyNavigationToAnotherSubModuleAfterOpeningTheInventorySection" description="Pre condition: User should be logged in and it is on verification module
+1. Click on the inventory  
+2. Click on the pharmacy 
+3. User should navigate to the pharmacy section from the inventory section " finished-at="2024-10-30T18:36:09 IST" duration-ms="8075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToAnotherSubModuleAfterOpeningTheInventorySection -->
+        <test-method signature="verifyNavigationOfTabs()[pri:5, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:12 IST" name="verifyNavigationOfTabs" description="Pre condition: User should be logged in and it is on verification module
+1. Click on the inventory  
+2. Click on the pharmacy 
+3. User should navigate to the pharmacy section from the inventory section " finished-at="2024-10-30T18:36:27 IST" duration-ms="14147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationOfTabs -->
+        <test-method signature="verifySearchDataByDateFilter()[pri:6, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:30 IST" name="verifySearchDataByDateFilter" description="Pre condition: User should be logged in and it is on Requisition section1. Click on the &quot;From&quot; date2. Select the &quot;From&quot; date3. Click on the &quot;To&quot; date4. Select &quot;To&quot; date5. Click on &quot;OK&quot; button" finished-at="2024-10-30T18:36:30 IST" duration-ms="106" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifySearchDataByDateFilter(verification_testcase.java:180)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchDataByDateFilter -->
+        <test-method signature="verifyToolTipText()[pri:7, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:33 IST" name="verifyToolTipText" description="Pre condition: User should be logged in and it is on Inventory &gt; Requisition section 
+1. Hover the mouse over the star/favourite icon. 
+2. Verify that a tooltip with the text &quot;Remember this date&quot; appears when hovering over the star." finished-at="2024-10-30T18:36:34 IST" duration-ms="500" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Remember this Date] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Remember this Date] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.verification_testcase.verifyToolTipText(verification_testcase.java:192)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToolTipText -->
+        <test-method signature="verifyDatesAreRemeberedCorrectly()[pri:8, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:37 IST" name="verifyDatesAreRemeberedCorrectly" description="Pre condition: User should be logged in and it is on Inventory &gt; Requisition section 
+1. Hover the mouse over the star/favourite icon. 
+2. Verify that a tooltip with the text &quot;Remember this date&quot; appears when hovering over the star." finished-at="2024-10-30T18:36:37 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifyDatesAreRemeberedCorrectly(verification_testcase.java:209)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDatesAreRemeberedCorrectly -->
+        <test-method signature="verifyResultDataIsAsPerTheSelectedDateRange()[pri:9, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:40 IST" name="verifyResultDataIsAsPerTheSelectedDateRange" description="Pre condition: User should be logged in and it is on verification module
+1. Click on the data range button
+2. Select&quot;one week&quot; option from the drop down
+3. Click on &quot;OK&quot; button" finished-at="2024-10-30T18:36:41 IST" duration-ms="971" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifyResultDataIsAsPerTheSelectedDateRange(verification_testcase.java:221)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResultDataIsAsPerTheSelectedDateRange -->
+        <test-method signature="verifyAllTheRadioButtonsAreSelectable()[pri:10, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:44 IST" name="verifyAllTheRadioButtonsAreSelectable" description="Pre condition: User should be logged in and it is on Verification module
+1. Click on the &quot;Pending &quot; Radio button from List by Verification Status
+2. Click on the &quot;Approved &quot; Radio button from List by Verification Status
+3. Click on the &quot;Rejected &quot; Radio button from List by Verification Status
+4. Click on the &quot;All &quot; Radio button from List by Verification Status" finished-at="2024-10-30T18:36:44 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifyAllTheRadioButtonsAreSelectable(verification_testcase.java:241)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTheRadioButtonsAreSelectable -->
+        <test-method signature="verifyRecordsAreFilterdAccordingToRequisitionStatus()[pri:11, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:47 IST" name="verifyRecordsAreFilterdAccordingToRequisitionStatus" description="Pre condition: User should be logged in and it is on Verification module
+1. Click on Requisition Status drop down
+2. Click on &quot;Active&quot; drop down option
+" finished-at="2024-10-30T18:36:47 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifyRecordsAreFilterdAccordingToRequisitionStatus(verification_testcase.java:259)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecordsAreFilterdAccordingToRequisitionStatus -->
+        <test-method signature="verifyRequisitionPageForRecord()[pri:12, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:50 IST" name="verifyRequisitionPageForRecord" description="Pre condition: User should be logged in and it is on Verification module
+1. Select &quot;All&quot; radio button
+2. Select &quot;All&quot;  drop down option
+3. Click on &quot;FROM&quot; and Select &quot;Jan 2020&quot;
+4. Click on &quot;TO&quot; and select &quot;march 2024&quot;
+5. Click on &quot;OK&quot; button
+6. Click on &quot;View&quot; button from action column of specific row7. User should navigate to the Check and Verify Requisition page of that Selected specific row " finished-at="2024-10-30T18:36:50 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifyRequisitionPageForRecord(verification_testcase.java:272)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequisitionPageForRecord -->
+        <test-method signature="verifyRecordCountMatches()[pri:13, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:54 IST" name="verifyRecordCountMatches" description="Pre condition: User should be logged in and it is on Requisition tab in verification module 
+1. Click on inventory section 
+2. Click on the &quot;Purchase Request&quot; sub-tab.
+3. Find and select the &quot;All&quot; radio button to view all records.
+4. Fetch and Verify Result Counts. 
+5. The result count displayed at the bottom of the page should match the total record count." finished-at="2024-10-30T18:36:54 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifyRecordCountMatches(verification_testcase.java:292)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecordCountMatches -->
+        <test-method signature="verifyTheUserIsAbleScrollUpAndDown()[pri:14, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:36:57 IST" name="verifyTheUserIsAbleScrollUpAndDown" description="Pre condition: User should be logged in
+1. Verify &quot;Pending&quot; radio button is visible
+2. Scroll all the way to the bottom of the page
+3. Verify &quot;Previous&quot; button is visible
+4. Scroll all the way to the top of the page
+5. Verify &quot;Pending&quot; radio button is visible" finished-at="2024-10-30T18:36:57 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.verifyTheUserIsAbleScrollUpAndDown(verification_testcase.java:302)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleScrollUpAndDown -->
+        <test-method signature="verifyRequiredFieldErrormessage()[pri:15, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:00 IST" name="verifyRequiredFieldErrormessage" description="Precondition: User should be logged in and on the Verification module
+1. Navigate to the &quot;Internal&quot; section under Inventory.
+2. Click on &quot;Purchase Request&quot;.
+3. Click on the &quot;Create Purchase Request&quot; button.
+4. Click on the &quot;Request&quot; button." finished-at="2024-10-30T18:37:00 IST" duration-ms="574" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Item is required] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Item is required] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.verification_testcase.verifyRequiredFieldErrormessage(verification_testcase.java:323)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequiredFieldErrormessage -->
+        <test-method signature="createAndverifyPurchaseRequest()[pri:16, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:03 IST" name="createAndverifyPurchaseRequest" description="Precondition: User should be logged in and on the Inventory section.
+1. Navigate to the &quot;Internal&quot; section under Inventory.
+2. Click on &quot;Purchase Request&quot;.
+3. Click on the &quot;Create Purchase Request&quot; button.
+4. Fill in the required fields to create a Purchase Request.
+5. Click on the &quot;Request&quot; button.
+6. Verify that the Purchase Request has been successfully created." finished-at="2024-10-30T18:37:04 IST" duration-ms="603" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual and Expected are not equal expected [Purchase Order Requisition is Generated and Saved] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual and Expected are not equal expected [Purchase Order Requisition is Generated and Saved] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testcases.verification_testcase.createAndverifyPurchaseRequest(verification_testcase.java:340)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndverifyPurchaseRequest -->
+        <test-method signature="verifyPurchaseRequestInVerificationModule()[pri:17, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:07 IST" name="verifyPurchaseRequestInVerificationModule" description="Precondition: User should be logged in and on the Verification section.
+1. Navigate to the &quot;Inventory&quot; section under Verification.
+2. Click on &quot;Purchase Request&quot;.
+3.  Verify that the recently created Purchase Request is visible in the list. 
+4.  Verify that the status of the Purchase Request is &quot;Pending&quot;." finished-at="2024-10-30T18:37:07 IST" duration-ms="237" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [pending] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [pending] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.verification_testcase.verifyPurchaseRequestInVerificationModule(verification_testcase.java:355)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPurchaseRequestInVerificationModule -->
+        <test-method signature="approveThePurchaseRequestAndVerifyStatus()[pri:18, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:10 IST" name="approveThePurchaseRequestAndVerifyStatus" description="Precondition: User should be logged in and on the Verification section.
+1. Navigate to the &quot;Inventory&quot; section under Verification.
+2. Click on &quot;Purchase Request&quot;.
+3. Find the Purchase Request with &quot;Pending&quot; status.
+4. Click on the &quot;View&quot; button under the action column for the Purchase Request.
+5. Approve the Purchase Request.
+6. Verify the success message confirming the approval.
+7. Click on the &quot;Approved&quot; radio button.
+8. Verify that the status of the Purchase Request has changed to &quot;Approved&quot;." finished-at="2024-10-30T18:37:11 IST" duration-ms="146" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "pages.verification_page.approveThePurchaseRequestAndVerifyStatus(java.util.Map)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "pages.verification_page.approveThePurchaseRequestAndVerifyStatus(java.util.Map)" is null
+at testcases.verification_testcase.approveThePurchaseRequestAndVerifyStatus(verification_testcase.java:376)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveThePurchaseRequestAndVerifyStatus -->
+        <test-method signature="rejectAPurchaseRequestAndVerifyThePopUpMessage()[pri:19, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:14 IST" name="rejectAPurchaseRequestAndVerifyThePopUpMessage" description="Precondition: User should be logged in and on the Verification section.
+1. Navigate to the &quot;Inventory&quot; section under Verification.
+2. Click on &quot;Purchase Request&quot;.
+3. Click on the &quot;View&quot; button under the action column for the Purchase Request.
+4. Click on &quot;Reject All&quot; button
+" finished-at="2024-10-30T18:37:14 IST" duration-ms="168" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "pages.verification_page.rejectAPurchaseRequestAndVerifyThePopUpMessage(java.util.Map)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "pages.verification_page.rejectAPurchaseRequestAndVerifyThePopUpMessage(java.util.Map)" is null
+at testcases.verification_testcase.rejectAPurchaseRequestAndVerifyThePopUpMessage(verification_testcase.java:394)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rejectAPurchaseRequestAndVerifyThePopUpMessage -->
+        <test-method signature="rehectThePurchaseRequestAndVerifyStatus()[pri:20, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:17 IST" name="rehectThePurchaseRequestAndVerifyStatus" description="Precondition: User should be logged in and on the Verificationn section.
+1. Navigate to the &quot;Inventory&quot; section under Verification.
+2. Click on &quot;Purchase Request&quot;.
+3. Click on the &quot;Approved&quot; radio button.
+4. Find the previously approved Purchase Request.
+5. Click on the &quot;View&quot; button under the action column for the Purchase Request.
+6. Reject the Purchase Request.
+7. Click on the &quot;Rejected&quot; radio button.
+8. Verify that the status of the Purchase Request has changed to &quot;Rejected&quot;." finished-at="2024-10-30T18:37:17 IST" duration-ms="146" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "pages.verification_page.rejectThePurchaseRequestAndVerifyStatus(java.util.Map)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "pages.verification_page.rejectThePurchaseRequestAndVerifyStatus(java.util.Map)" is null
+at testcases.verification_testcase.rehectThePurchaseRequestAndVerifyStatus(verification_testcase.java:411)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rehectThePurchaseRequestAndVerifyStatus -->
+        <test-method signature="takingScreenshotOfCurrentPage()[pri:21, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:20 IST" name="takingScreenshotOfCurrentPage" description="Under verification &gt; Purchase Request moduleTake the screenshot of the current page" finished-at="2024-10-30T18:37:20 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testcases.verification_testcase.takingScreenshotOfCurrentPage(verification_testcase.java:421)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takingScreenshotOfCurrentPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.verification_testcase@263558c9]" started-at="2024-10-30T18:37:23 IST" name="tearDown" finished-at="2024-10-30T18:37:24 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.verification_testcase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

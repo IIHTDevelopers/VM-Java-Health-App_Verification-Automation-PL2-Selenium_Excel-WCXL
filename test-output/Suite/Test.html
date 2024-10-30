@@ -1,0 +1,667 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/16/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 30 18:34:34 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>169 seconds (169309 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.verification_testcase.rejectAPurchaseRequestAndVerifyThePopUpMessage()'><b>rejectAPurchaseRequestAndVerifyThePopUpMessage</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Verification section.
+1. Navigate to the "Inventory" section under Verification.
+2. Click on "Purchase Request".
+3. Click on the "View" button under the action column for the Purchase Request.
+4. Click on "Reject All" button
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because the return value of &quot;pages.verification_page.rejectAPurchaseRequestAndVerifyThePopUpMessage(java.util.Map)&quot; is null
+	at testcases.verification_testcase.rejectAPurchaseRequestAndVerifyThePopUpMessage(verification_testcase.java:394)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1338792749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1338792749'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because the return value of &quot;pages.verification_page.rejectAPurchaseRequestAndVerifyThePopUpMessage(java.util.Map)&quot; is null
+	at testcases.verification_testcase.rejectAPurchaseRequestAndVerifyThePopUpMessage(verification_testcase.java:394)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.createAndverifyPurchaseRequest()'><b>createAndverifyPurchaseRequest</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Inventory section.
+1. Navigate to the "Internal" section under Inventory.
+2. Click on "Purchase Request".
+3. Click on the "Create Purchase Request" button.
+4. Fill in the required fields to create a Purchase Request.
+5. Click on the "Request" button.
+6. Verify that the Purchase Request has been successfully created.</td>
+<td><div><pre>java.lang.AssertionError: Actual and Expected are not equal expected [Purchase Order Requisition is Generated and Saved] but found [null]
+	at testcases.verification_testcase.createAndverifyPurchaseRequest(verification_testcase.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1473903295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1473903295'><pre>java.lang.AssertionError: Actual and Expected are not equal expected [Purchase Order Requisition is Generated and Saved] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testcases.verification_testcase.createAndverifyPurchaseRequest(verification_testcase.java:340)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyRequisitionPageForRecord()'><b>verifyRequisitionPageForRecord</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on Verification module
+1. Select "All" radio button
+2. Select "All"  drop down option
+3. Click on "FROM" and Select "Jan 2020"
+4. Click on "TO" and select "march 2024"
+5. Click on "OK" button
+6. Click on "View" button from action column of specific row7. User should navigate to the Check and Verify Requisition page of that Selected specific row </td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifyRequisitionPageForRecord(verification_testcase.java:272)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1825424261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1825424261'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifyRequisitionPageForRecord(verification_testcase.java:272)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyTheUserIsAbleScrollUpAndDown()'><b>verifyTheUserIsAbleScrollUpAndDown</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in
+1. Verify "Pending" radio button is visible
+2. Scroll all the way to the bottom of the page
+3. Verify "Previous" button is visible
+4. Scroll all the way to the top of the page
+5. Verify "Pending" radio button is visible</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifyTheUserIsAbleScrollUpAndDown(verification_testcase.java:302)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1500889087", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1500889087'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifyTheUserIsAbleScrollUpAndDown(verification_testcase.java:302)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.approveThePurchaseRequestAndVerifyStatus()'><b>approveThePurchaseRequestAndVerifyStatus</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Verification section.
+1. Navigate to the "Inventory" section under Verification.
+2. Click on "Purchase Request".
+3. Find the Purchase Request with "Pending" status.
+4. Click on the "View" button under the action column for the Purchase Request.
+5. Approve the Purchase Request.
+6. Verify the success message confirming the approval.
+7. Click on the "Approved" radio button.
+8. Verify that the status of the Purchase Request has changed to "Approved".</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because the return value of &quot;pages.verification_page.approveThePurchaseRequestAndVerifyStatus(java.util.Map)&quot; is null
+	at testcases.verification_testcase.approveThePurchaseRequestAndVerifyStatus(verification_testcase.java:376)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180445297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180445297'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because the return value of &quot;pages.verification_page.approveThePurchaseRequestAndVerifyStatus(java.util.Map)&quot; is null
+	at testcases.verification_testcase.approveThePurchaseRequestAndVerifyStatus(verification_testcase.java:376)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyToolTipText()'><b>verifyToolTipText</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on Inventory > Requisition section 
+1. Hover the mouse over the star/favourite icon. 
+2. Verify that a tooltip with the text "Remember this date" appears when hovering over the star.</td>
+<td><div><pre>java.lang.AssertionError: expected [Remember this Date] but found [null]
+	at testcases.verification_testcase.verifyToolTipText(verification_testcase.java:192)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2022285543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2022285543'><pre>java.lang.AssertionError: expected [Remember this Date] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testcases.verification_testcase.verifyToolTipText(verification_testcase.java:192)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyRecordsAreFilterdAccordingToRequisitionStatus()'><b>verifyRecordsAreFilterdAccordingToRequisitionStatus</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on Verification module
+1. Click on Requisition Status drop down
+2. Click on "Active" drop down option
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifyRecordsAreFilterdAccordingToRequisitionStatus(verification_testcase.java:259)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1759617008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1759617008'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifyRecordsAreFilterdAccordingToRequisitionStatus(verification_testcase.java:259)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyPurchaseRequestInVerificationModule()'><b>verifyPurchaseRequestInVerificationModule</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Verification section.
+1. Navigate to the "Inventory" section under Verification.
+2. Click on "Purchase Request".
+3.  Verify that the recently created Purchase Request is visible in the list. 
+4.  Verify that the status of the Purchase Request is "Pending".</td>
+<td><div><pre>java.lang.AssertionError: expected [pending] but found [null]
+	at testcases.verification_testcase.verifyPurchaseRequestInVerificationModule(verification_testcase.java:355)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2043933152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2043933152'><pre>java.lang.AssertionError: expected [pending] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testcases.verification_testcase.verifyPurchaseRequestInVerificationModule(verification_testcase.java:355)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.rehectThePurchaseRequestAndVerifyStatus()'><b>rehectThePurchaseRequestAndVerifyStatus</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Verificationn section.
+1. Navigate to the "Inventory" section under Verification.
+2. Click on "Purchase Request".
+3. Click on the "Approved" radio button.
+4. Find the previously approved Purchase Request.
+5. Click on the "View" button under the action column for the Purchase Request.
+6. Reject the Purchase Request.
+7. Click on the "Rejected" radio button.
+8. Verify that the status of the Purchase Request has changed to "Rejected".</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because the return value of &quot;pages.verification_page.rejectThePurchaseRequestAndVerifyStatus(java.util.Map)&quot; is null
+	at testcases.verification_testcase.rehectThePurchaseRequestAndVerifyStatus(verification_testcase.java:411)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace58777590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace58777590'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because the return value of &quot;pages.verification_page.rejectThePurchaseRequestAndVerifyStatus(java.util.Map)&quot; is null
+	at testcases.verification_testcase.rehectThePurchaseRequestAndVerifyStatus(verification_testcase.java:411)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyRequiredFieldErrormessage()'><b>verifyRequiredFieldErrormessage</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Verification module
+1. Navigate to the "Internal" section under Inventory.
+2. Click on "Purchase Request".
+3. Click on the "Create Purchase Request" button.
+4. Click on the "Request" button.</td>
+<td><div><pre>java.lang.AssertionError: expected [Item is required] but found [null]
+	at testcases.verification_testcase.verifyRequiredFieldErrormessage(verification_testcase.java:323)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2116329982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2116329982'><pre>java.lang.AssertionError: expected [Item is required] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testcases.verification_testcase.verifyRequiredFieldErrormessage(verification_testcase.java:323)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyResultDataIsAsPerTheSelectedDateRange()'><b>verifyResultDataIsAsPerTheSelectedDateRange</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on verification module
+1. Click on the data range button
+2. Select"one week" option from the drop down
+3. Click on "OK" button</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifyResultDataIsAsPerTheSelectedDateRange(verification_testcase.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace940149234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace940149234'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifyResultDataIsAsPerTheSelectedDateRange(verification_testcase.java:221)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.takingScreenshotOfCurrentPage()'><b>takingScreenshotOfCurrentPage</b><br>Test class: testcases.verification_testcase<br>Test method: Under verification > Purchase Request moduleTake the screenshot of the current page</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.takingScreenshotOfCurrentPage(verification_testcase.java:421)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1650946235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1650946235'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.takingScreenshotOfCurrentPage(verification_testcase.java:421)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyRecordCountMatches()'><b>verifyRecordCountMatches</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on Requisition tab in verification module 
+1. Click on inventory section 
+2. Click on the "Purchase Request" sub-tab.
+3. Find and select the "All" radio button to view all records.
+4. Fetch and Verify Result Counts. 
+5. The result count displayed at the bottom of the page should match the total record count.</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifyRecordCountMatches(verification_testcase.java:292)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1670193072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1670193072'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifyRecordCountMatches(verification_testcase.java:292)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifySearchDataByDateFilter()'><b>verifySearchDataByDateFilter</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on Requisition section1. Click on the "From" date2. Select the "From" date3. Click on the "To" date4. Select "To" date5. Click on "OK" button</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifySearchDataByDateFilter(verification_testcase.java:180)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6980213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6980213'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifySearchDataByDateFilter(verification_testcase.java:180)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyDatesAreRemeberedCorrectly()'><b>verifyDatesAreRemeberedCorrectly</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on Inventory > Requisition section 
+1. Hover the mouse over the star/favourite icon. 
+2. Verify that a tooltip with the text "Remember this date" appears when hovering over the star.</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifyDatesAreRemeberedCorrectly(verification_testcase.java:209)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace187505842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187505842'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifyDatesAreRemeberedCorrectly(verification_testcase.java:209)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyAllTheRadioButtonsAreSelectable()'><b>verifyAllTheRadioButtonsAreSelectable</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on Verification module
+1. Click on the "Pending " Radio button from List by Verification Status
+2. Click on the "Approved " Radio button from List by Verification Status
+3. Click on the "Rejected " Radio button from List by Verification Status
+4. Click on the "All " Radio button from List by Verification Status</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.verification_testcase.verifyAllTheRadioButtonsAreSelectable(verification_testcase.java:241)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace707564403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace707564403'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.verification_testcase.verifyAllTheRadioButtonsAreSelectable(verification_testcase.java:241)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.verification_testcase.verifyNavigationOfTabs()'><b>verifyNavigationOfTabs</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on verification module
+1. Click on the inventory  
+2. Click on the pharmacy 
+3. User should navigate to the pharmacy section from the inventory section </td>
+<td></td>
+<td>14</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyNavigationToAnotherSubModuleAfterOpeningTheInventorySection()'><b>verifyNavigationToAnotherSubModuleAfterOpeningTheInventorySection</b><br>Test class: testcases.verification_testcase<br>Test method: Pre condition: User should be logged in and it is on verification module
+1. Click on the inventory  
+2. Click on the pharmacy 
+3. User should navigate to the pharmacy section from the inventory section </td>
+<td></td>
+<td>8</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyVerificationModule()'><b>verifyVerificationModule</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the healthapp section
+1. Login in the healthapp application
+2. Scroll down menu till verification
+3. Click on the verification</td>
+<td></td>
+<td>40</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyVerificationSubModules()'><b>verifyVerificationSubModules</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Verification section\n"
+	+ "1. Click on the Verification Module drop-down arrow\n"
+	+ "2. Click on Order</td>
+<td></td>
+<td>2</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+<tr>
+<td title='testcases.verification_testcase.verifyInventoryTabsAndButtonsAreDisplayed()'><b>verifyInventoryTabsAndButtonsAreDisplayed</b><br>Test class: testcases.verification_testcase<br>Test method: Precondition: User should be logged in and on the Verification section\n"
+	+ "1. Click on the Verification Module drop-down arrow\n"
+	+ "2. Click on Inventory	+ "3. Click on Requisition</td>
+<td></td>
+<td>14</td>
+<td>testcases.verification_testcase@263558c9</td></tr>
+</table><p>
+</body>
+</html>
